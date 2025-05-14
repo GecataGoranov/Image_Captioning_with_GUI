@@ -6,7 +6,7 @@ Retrieving images using textual queries is a fundamental task in computer vision
 
 The core idea is to generate vector embeddings for both images and their captions using two separate encoders. These encoders are trained so that embeddings of corresponding image‑caption pairs are close in the shared vector space. At inference time, given a textual prompt, the text encoder generates an embedding, and the model retrieves the most semantically similar images.
 
-The interactive application is implemented with **Streamlit**, located in the `app` folder. It can be launched using:
+The interactive application is implemented with **Streamlit**, located in the `app` folder. In order to be able to use it, first you would have to download the necessary files [from this directory](https://drive.google.com/drive/folders/11y4u6n7eTYwB3ynDI2llErPiEVK3uliX?usp=sharing). Then you would have to place them in a directory, called `saved_data` in the root folder of the project. Then the application can be launched using:
 
 ```
 streamlit run main.py
